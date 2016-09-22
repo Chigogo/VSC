@@ -93,9 +93,9 @@
 	if(word.value!=word.getAttribute("placeholder") && word.value.replace(/ *　*/g,"")!=""){
 		var input_value = word.value;
 		input_value = encodeURI(input_value);
-		document.getElementsByTagName("iframe")[1].setAttribute('src','http://dict.youdao.com/search?le=eng&q='+ input_value+ '&keyfrom=dict.top');
-		document.getElementsByTagName("iframe")[2].setAttribute('src','http://dict.baidu.com/s?wd='+ input_value);
-		document.getElementsByTagName("iframe")[0].setAttribute('src','http://www.bing.com/dict/search?q='+ input_value);
+		document.getElementsByTagName("iframe")[1].setAttribute('src','//dict.youdao.com/search?le=eng&q='+ input_value+ '&keyfrom=dict.top');
+		document.getElementsByTagName("iframe")[2].setAttribute('src','//dict.baidu.com/s?wd='+ input_value);
+		document.getElementsByTagName("iframe")[0].setAttribute('src','//www.bing.com/dict/search?q='+ input_value);
 		word.setAttribute("placeholder", word.value);
 	}
 
